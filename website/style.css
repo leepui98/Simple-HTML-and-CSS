@@ -1,0 +1,142 @@
+body{
+	background-color:orange;
+	color:yellow;
+}
+
+
+a:hover{
+	color:peachpuff;
+	background-color: rebeccapurple;
+}
+p{
+	color:rgb(190,30,30);
+}
+
+#name1{
+	background:skyblue;
+	margin:0.5cm;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+p#msg{
+	animation: flash 1s 3;
+} 
+
+@keyframes flash {
+	50% {
+		background: orange;
+		font-size: 200%;
+	}
+	
+	75% {
+		background: yellow;
+	}
+	
+	to {
+		color: orange;
+	}
+}
+ 
+li.happy{
+	color:red;
+	/*text-decoration: underline; */
+}
+
+li.happy2{
+	color:purple;
+	/* text-decoration: underline; */
+}
+
+li.happy3{
+	color:blue;
+	/* text-decoration: underline; */
+}
+
+table,th,td{
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+.ab{
+	display:flex;
+	justify-content: center;
+}
+.side{
+	display:inline-block;
+}
+
+.beside{
+	display:inline-block;
+}
+
+label#jjj{
+	color: mediumvioletred
+}
+img{
+	border:10px dashed yellow;
+	border-width:10px;
+	border-style:dashed;
+	border-color:yellow;
+	max-width:50%;
+}
+
+img:hover{
+	border:10px solid black;
+}
+
+article p{
+	margin:0;
+	border: 1px solid black;
+}
+
+article p::before {
+	content: attr(id);
+	background: orange;
+}
+
+article {
+	display:flex;
+	flex-flow: row wrap;
+}
+
+#rc1{
+	flex:2;
+}
+
+#rc2{
+	flex: 3;
+}
+
+#rc3{
+	flex:5;
+}
+
+ul#topmenu{
+	background:skyblue;
+	margin:0;
+	padding:0;
+}
+
+ul#topmenu > li {
+	display: inline-block;
+}
+
+ul#topmenu > li > ul {
+	display: none;
+}
+
+ul#topmenu > li:hover > ul {
+	display: block;
+	position: absolute;
+	background: darkgrey;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+@media(max-width: 500px) {
+	body {
+		background: turquoise;
+	}
+}
